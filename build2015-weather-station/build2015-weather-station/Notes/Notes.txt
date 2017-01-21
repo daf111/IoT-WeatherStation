@@ -1,0 +1,40 @@
+﻿Instalacion de Windows 10 IoT Core: https://developer.microsoft.com/en-us/windows/iot/getstarted
+
+La primera vez que se compila el proyecto ir a:
+Botón derecho en Solution
+Click en propierties
+Click en Configurtion propierties
+Tildar todos los Build
+Compilar build2015-weather-station
+Cuando finaliza la compilación, destildar los dos primeros Build (build2015-weather-station y build2015-weather-station-task)
+
+Poner como compilador (en BUILD y DEBUG)
+
+PINs CONECTION
+==============
+Wheater Shield
+7 = Azul
+8 = Violeta
+SDA = Amarillo
+SCL = Naranja
+
+VIN = Rojo
+GND = Gris
+3.3v = Marrón
+
+Raspberry Py 3
+2 = Amarillo
+3.3V = Marrón
+5V = Rojo
+GND = Gris
+3 = Naranja
+5 = Violeta
+6 = Azul
+
+    GND-------(gray)------GND
+    5V----------(red)---------VIN
+    3V3-------(brown)------5V (shield hack; not a typo)
+    GPIO2-----(yellow)----SDA
+    GPIO3----(orange)----SCL
+    GPIO5-----(green)-----D8
+    GPIO6-----(blue)-------D7
